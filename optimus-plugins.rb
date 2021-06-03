@@ -12,22 +12,22 @@ class OptimusPlugins < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.1/optimus-plugins_0.0.1_darwin_amd64.tar.gz"
-      sha256 "419f4c79b05a3b6cb0f0f3f794f861d92832398cae463b8b6109419e38c1ef12"
+      sha256 "eea0c7a9d00d76c2a320054c19f63f3980006d8d0dd38919c037ffc3688e1959"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.1/optimus-plugins_0.0.1_darwin_arm64.tar.gz"
-      sha256 "8275952d2b5bafebff4d08069467bbdb05ad52a95efd8ae0efe0d59d984d6d36"
+      sha256 "d94f32a92431e248e8db5c8810a1954a0bb2bccecb260cbcfce36b3303babd30"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.1/optimus-plugins_0.0.1_linux_amd64.tar.gz"
-      sha256 "6b8d12ccde66efc0ea9e6a338297bb69d34ed07f51ad7ef3ecc2aa8a97abb550"
+      sha256 "42f60d73b89b4d500189c4cbba03a60e0683c3a886454e2283f4882fee8f53f9"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.1/optimus-plugins_0.0.1_linux_arm64.tar.gz"
-      sha256 "40394ef5ed60dedf4c76cade17934c3c9b96f5e2ab490de3402074d18a1c5412"
+      sha256 "b9a2a08bebed8b840bce17cfee83053d9759e514e7debbe8fbb6a51736a906a9"
     end
   end
 
