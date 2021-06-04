@@ -5,29 +5,29 @@
 class OptimusPluginsKush < Formula
   desc "Optimus plugins - [Optimus Near earth orbit tracker]"
   homepage ""
-  version "0.0.2"
+  version "0.0.3"
   license "Apache 2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.2/optimus-plugins_0.0.2_darwin_amd64.tar.gz"
-      sha256 "a6441324a71c14d184251d795acf97e3c98bd241eee94d543cd9fe83847e17ee"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.3/optimus-plugins_0.0.3_darwin_amd64.tar.gz"
+      sha256 "bd9b711a426335e94d6c5607205c4f358dba5bcbfdcc95264a0c42584d430fb2"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.2/optimus-plugins_0.0.2_darwin_arm64.tar.gz"
-      sha256 "49d3930c1ffc49d530272a8d8deca0bca783bb6638a27158e05d9187f7924990"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.3/optimus-plugins_0.0.3_darwin_arm64.tar.gz"
+      sha256 "434d99da0243485efdc2e788b2ef457f7708d621b9779499df977d8742a31467"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.2/optimus-plugins_0.0.2_linux_amd64.tar.gz"
-      sha256 "280d93332f0eb090aa1735d0ed6bdbb029dba061356ed4ab56a0cbce8bdb8de3"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.3/optimus-plugins_0.0.3_linux_amd64.tar.gz"
+      sha256 "efa436e14cdedd60a5e37d432075ad219fb01b2fc909b648928e40ecc1e46052"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.2/optimus-plugins_0.0.2_linux_arm64.tar.gz"
-      sha256 "acb8e396e77ef3b2ae46f32692fbaf8ff5c5da6e75881f48efe4d906822d1ede"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.3/optimus-plugins_0.0.3_linux_arm64.tar.gz"
+      sha256 "c90a1b867e71f29cd7244c6e3796266d2147a21bd09ea37ab6e62be81aaf7f9c"
     end
   end
 
