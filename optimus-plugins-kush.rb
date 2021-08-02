@@ -5,29 +5,29 @@
 class OptimusPluginsKush < Formula
   desc "Optimus plugins - [Optimus Near earth orbit tracker]"
   homepage ""
-  version "0.0.4"
+  version "0.0.5"
   license "Apache 2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.4/optimus-plugins_0.0.4_darwin_amd64.tar.gz"
-      sha256 "8795244a15c2aaf874ef9026a1722691db9cb17294baa6b1c70435ea795e764a"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_darwin_amd64.tar.gz"
+      sha256 "299aeace90912618458633b002ecf7aa0a46366d4c83a1a4e2a31792456a3931"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.4/optimus-plugins_0.0.4_darwin_arm64.tar.gz"
-      sha256 "39aad1fc34f68fca3d49ceed9b75d09694534fbbf6f1518fb0c6ba9885e634b5"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_darwin_arm64.tar.gz"
+      sha256 "6cb2eb471903d88b58f8a05c4e9db6baa6dd7b8be00aed965dd46a8a2f5b7fc7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.4/optimus-plugins_0.0.4_linux_amd64.tar.gz"
-      sha256 "b08be1f22d9f64b3ea93e27271a2870a2f506b7208320f175f271a36c35e2228"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_linux_amd64.tar.gz"
+      sha256 "6d199c7425c96b8818e345ff553be10c54b788317f439426b7bafa341f564987"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.4/optimus-plugins_0.0.4_linux_arm64.tar.gz"
-      sha256 "da5719b1ca36ab29747cb2a3f5bbc78b87865b0d1e6a251b88b37ff26cec4c4c"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_linux_arm64.tar.gz"
+      sha256 "facc5c572f543d2f40733a7e592f8dba3e9c9864ad541b4ef4307266fb9b001c"
     end
   end
 
