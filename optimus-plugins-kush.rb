@@ -5,33 +5,44 @@
 class OptimusPluginsKush < Formula
   desc "Optimus plugins - [Optimus Near earth orbit tracker]"
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
   license "Apache 2.0"
-  bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_darwin_amd64.tar.gz"
-      sha256 "299aeace90912618458633b002ecf7aa0a46366d4c83a1a4e2a31792456a3931"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_darwin_arm64.tar.gz"
-      sha256 "6cb2eb471903d88b58f8a05c4e9db6baa6dd7b8be00aed965dd46a8a2f5b7fc7"
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.6/optimus-plugins_0.0.6_darwin_arm64.tar.gz"
+      sha256 "2839a0e0149227d4b39726982a0f4964806e1b27840b91bf1f0d08dfac4cc40a"
+
+      def install
+        bin.install Dir["optimus-*"]
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.6/optimus-plugins_0.0.6_darwin_amd64.tar.gz"
+      sha256 "f9cc0b556aae5b1915d48011c45bd27d008e9524b9fa0114e4c5399b33821d54"
+
+      def install
+        bin.install Dir["optimus-*"]
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_linux_amd64.tar.gz"
-      sha256 "6d199c7425c96b8818e345ff553be10c54b788317f439426b7bafa341f564987"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.5/optimus-plugins_0.0.5_linux_arm64.tar.gz"
-      sha256 "facc5c572f543d2f40733a7e592f8dba3e9c9864ad541b4ef4307266fb9b001c"
-    end
-  end
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.6/optimus-plugins_0.0.6_linux_arm64.tar.gz"
+      sha256 "c33275eba65ca2b469eb2d8c4d07261779c9844e1ab76a4d9fbf98e3a1f05c46"
 
-  def install
-    bin.install Dir["optimus-*"]
+      def install
+        bin.install Dir["optimus-*"]
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kushsharma/optimus-plugins/releases/download/v0.0.6/optimus-plugins_0.0.6_linux_amd64.tar.gz"
+      sha256 "226a6f5d62f1bd1ad30595497c63f46e050a26083f8eb41cf334b1ddcaad809b"
+
+      def install
+        bin.install Dir["optimus-*"]
+      end
+    end
   end
 end
